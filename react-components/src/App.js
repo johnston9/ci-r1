@@ -1,4 +1,8 @@
 import "./App.css";
+// import logo from './logo.svg';
+// import FunctionalGreeting from "./components/FunctionalGreeting";
+// import StatefulGreeting from "./components/StatefulGreeting";
+// import HooksCounter from "./components/HooksCounter";
 // import EventsClass from "./components/EventsClass";
 // import EventsFunctional from "./components/EventsFunctional";
 ///import EventBinding from "./components/EventBinding";
@@ -6,29 +10,15 @@ import "./App.css";
 // import ConditionalRenderingFunctional from "./components/ConditionalRenderingFunctional";
 // import NestingComponents from "./components/NestingComponents";
 // import MethodsAsPropsParent from "./components/MethodsAsPropsParent";
-import RenderingLists from "./components/RenderingLists";
+// import RenderingLists from "./components/RenderingLists";
+// import Clock  from "./components/Clock";
+// import LifeCyclesCDM from "./components/LifeCyclesCDM";
+// import LifeCyclesCDU from "./components/LifeCyclesCDU";
+import LifeCyclesCWU from "./components/LifeCyclesCWU";
 
 function App() {
   return <div className="App">
-      < RenderingLists/>
+      <LifeCyclesCWU/>
   </div>;
 }
-
 export default App;
-
-// import './App.css';
-// import FunctionalGreeting from "./components/FunctionalGreeting";
-// import StatefulGreeting from "./components/StatefulGreeting";
-// import HooksCounter from "./components/HooksCounter";
-// import logo from './logo.svg';
-
-// function App() {
-//   return (
-//     <div className="App">
-//       {/* <FunctionalGreeting name="John" /> */}
-//       <StatefulGreeting greeting="hi" />
-//       {/* <HooksCounter name="Mike" /> */}
-//     </div>
-//   );
-// }
-//export default App;
