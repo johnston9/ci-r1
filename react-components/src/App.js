@@ -16,10 +16,12 @@ import "./App.css";
 // import LifeCyclesCDU from "./components/LifeCyclesCDU";
 // import LifeCyclesCWU from "./components/LifeCyclesCWU";
 // import ControlledForm from "./components/ControlledForm";
-import UnControlledForm from "./components/UnControlledForm";
+// import UnControlledForm from "./components/UnControlledForm";
+// import ControlledFormHooks from "./components/ControlledFormHooks";
+import UseStateWithArrays from "./components/UseStateWithArrays";
 function App() {
   return <div className="App">
-      <UnControlledForm/>
+      <UseStateWithArrays/>
   </div>;
 }
 export default App;

@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 
 export default function HooksCounter(props) {
-  // count: a new state property
-  // setCount: a method to update count
-  // useState(0): initialize count to 0
   const [count, setCount] = useState(0);
 
   return (
