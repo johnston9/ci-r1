@@ -8,21 +8,22 @@ export default class ClassCounter extends Component {
     };
   }
 
-  handleClick = () => {
-    this.setState(prevState => {
-      return { count: prevState.count + 1 }
-    })
+  componentDidMount() {
+    document.title = this.state.count;
+  }
+  componentDidUpdate() {
+    document.title = this.state.count;
   }
 
   render() {
     return (
       <div>
-        <h1>
-          Hello, I'm a stateful class component!
-        </h1>
-        <h2>You clicked {this.state.count} times</h2>
-        <button onClick={this.handleClick}>
-            Increment Counter
+        <button onClick={() => this.setState(
+            prevState => ({
+                count: prevState.count + 1
+            })
+        )}>
+          Increment Count ({this.state.count})
         </button>
       </div>
     );

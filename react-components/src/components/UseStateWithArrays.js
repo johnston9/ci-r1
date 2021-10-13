@@ -5,17 +5,18 @@ function UseStateWithArrays() {
     const addNums = () => {
         setNums([...nums, nums.length + 1])
     }
+    
     const removeNums = () => {
-        nums.pop()
-        setNums([...nums])
-    }
-    const removeNum = () => {
         setNums(
             nums.filter((item, idx) => {
                 return idx !== nums.length - 1;
             })
         )
     }
+    // const removeNums = () => {
+    //     nums.pop()
+    //     setNums([...nums])
+    // }
     return (
         <div>
             <button onClick={addNums}>
