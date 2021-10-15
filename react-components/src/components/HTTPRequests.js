@@ -11,17 +11,20 @@ export class HTTPRequests extends Component {
        }
     }
 
-    componentDidMount() {
-        axios.get('https://jsonplaceholder.typicode.com/posts/2')
+    componentDidMount(){
+        axios.get('https://jsonplaceholder.typicode.com/posts/1')
         .then(response => {
             console.log(response);
-            const data = Array.isArray(response.data)
+            this.setState({
+                posts: Array.isArray(response.data)
                 ? response.data
                 : [response.data]
-            setPosts(data);
+            })
         })
         .catch(error => {
-            setError(error.message);
+            this.setState({
+                error: error.message
+            })
         })
     }
         
